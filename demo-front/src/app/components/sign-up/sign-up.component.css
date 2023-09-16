@@ -1,0 +1,14 @@
+.loginForm{
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%);
+    color: black;
+    text-align: center;
+}
+
+h1{
+    font-size: 3.8rem;
+    margin-top: 50px;
+    text-align: center;
+}

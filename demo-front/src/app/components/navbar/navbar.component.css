@@ -1,0 +1,12 @@
+span{
+    margin-right: 15px;
+}
+
+mat-toolbar{
+    background-color: black;
+}
+
+span.sout{
+    position: absolute;
+    right: 20px;
+}

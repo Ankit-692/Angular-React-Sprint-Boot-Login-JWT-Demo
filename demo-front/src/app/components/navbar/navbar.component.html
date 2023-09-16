@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+    <span><a mat-stroked-button routerLink="">Home</a></span>
+    <span><a mat-stroked-button *ngIf="ifLoggedIn()"routerLink="dashboard">Dashboard</a></span>
+    <span><a mat-stroked-button *ngIf="!ifLoggedIn()" routerLink="auth/login">Login</a></span>
+    <span><a mat-stroked-button *ngIf="!ifLoggedIn()"routerLink="auth/signUp">Register</a></span>
+    <span class="sout"><button mat-stroked-button *ngIf="ifLoggedIn()" (click)="sout()">Log Out</button></span>
+</mat-toolbar>

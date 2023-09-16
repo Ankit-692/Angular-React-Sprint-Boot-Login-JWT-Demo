@@ -1,0 +1,15 @@
+<h1>Login</h1>
+<h3 *ngIf="isNew">User Registered Successfully!</h3>
+<form (ngSubmit)="onSubmit()" class="loginForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input type="text" matInput required [(ngModel)]="credentials.username" name="username"/>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput required [(ngModel)]="credentials.password" name="password"/>
+    </mat-form-field>
+    <br>
+    <button type="submit" mat-raised-button color="accent" class="lbtn">Login</button>
+</form>
